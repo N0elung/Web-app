@@ -7,10 +7,10 @@ function Jujutsu() {
     const personajes = async () => {
         const data = await fetch("https://api-vercel-eoiv.onrender.com/jujutsu-kaisen");
         const response = await data.json();
+       
         setData(response)
-        
-
         }
+
         personajes();
     }, []);
     return (
